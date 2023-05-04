@@ -4,4 +4,4 @@ Small React Projects to understand React &amp; its basic techs.
 
 1. Infinite Scroller.
 2. Pagination React.
-3. React file upload.
+3. WildFire Tracker (NASA API)
