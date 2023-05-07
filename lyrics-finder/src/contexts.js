@@ -1,28 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "SEARCH":
-      return {
-        ...state,
-        trackList: action.payload,
-        heading: "Search Results",
-      };
-    default:
-      return state;
-  }
-};
-
-const Context = React.createContext();
+export const Context = React.createContext();
 
 export const Provider = (props) => {
   const initialState = {
     trackList: [],
     heading: "",
-    dispatch: (action) => {
-      setStore((store) => reducer(store, action));
-    },
   };
   const [store, setStore] = useState(initialState);
   useState(() => {
